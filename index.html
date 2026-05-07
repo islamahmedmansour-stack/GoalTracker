@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Goal Tracker
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="icon" href="images/logo.png">
+    <meta charset="UTF-8">
+    <meta name="description" content=" ">
+    <meta name="keywords" content=" , , ">
+    <meta name="author" content="Islam Mansour">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!-- =========================== ( بسم الله ) ===========================  -->
+    <!-- =====================================================================  -->
+    <!-- ===( START )===( . . . MAIN . . . )==================================  -->
+    <div class="main">
+        <div id="sureDelete" class="closeDelete">
+            <i id="closeIconDelete" class="fa-solid fa-circle-xmark "></i>
+            <h3>Make sure you want to delete ?</h3>
+            <button id="sureDeletebtn">Delete</button>
+        </div>
+        <!-- ================================================================= -->
+        <div class="add_search">
+            <div class="search">
+                <div class="search_icon">
+                    <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+                </div>
+                <input id="searchData" type="text" placeholder="Search goal title">
+            </div>
+            <!--  =======================  -->
+            <div class="add">
+                <div class="add_icon">
+                    <i class="fa-solid fa-plus fa-2x"></i>
+                </div>
+                <!-- ...... -->
+                <div class="data_input">
+                    <h2>Add a Goal</h2>
+                    <div class="data_input_form">
+                        <div>
+                            <input type="text" id="goalTitle" placeholder="e.g., Learn JavaScript">
+                            <label class="close label">Goal Title <span style="color: red;">*</span></label>
+                        </div>
+                        <div>
+                            <input type="text" id="description" placeholder="e.g., Practice coding">
+                            <label class="close label">Description</label>
+                        </div>
+                        <div>
+                            <select id="priority">
+                                <option hidden>Select Priority</option>
+                                <option value="High">High</option>
+                                <option value="Medium">Medium</option>
+                                <option value="Low">Low</option>
+                            </select>
+                            <label class="close label">Priority <span style="color: red;">*</span></label>
+                        </div>
+                        <button id="add">Add Goal</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- =====================================================================  -->
+        <div class="show_data_div">
+            <table class="table-bordered">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Priority</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="showData">
+                    <tr>
+                        <td colspan="5">No goals have been added yet ... <br>Add a goal <i class="fa-solid fa-circle-plus"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- ===================================( . . FOOTER  . . )===(  END  )===  -->
+    <!-- =====================================================================  -->
+    <!-- =========================== ( الحمد لله) ===========================  -->
+    <script src="script.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

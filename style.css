@@ -1,0 +1,293 @@
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+
+a {
+    text-decoration: none !important;
+    /* transition-duration: 0.1s;  */
+}
+
+/* a:hover{
+    font-size: 20px;
+} */
+body {
+    background: linear-gradient(338deg, rgba(145, 163, 176, 0.5) 50%, rgba(63, 196, 26, 1) 97%), linear-gradient(148deg, rgba(145, 163, 176, 0.5) 50%, rgb(6, 230, 241) 90%) !important;
+}
+
+/* ================================================================================
+====================================================================================*/
+.main {
+    width: 90%;
+    max-width: 500px;
+    height: 100vh;
+    position: relative;
+    margin: auto !important;
+    padding: 10px !important;
+}
+
+/* ==================== sure delete window ================ */
+.closeDelete {
+    display: none !important;
+}
+
+.openDelete {
+    display: flex;
+    position: absolute;
+    width: 80%;
+    height: 120px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    border: 2px black solid;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #08f5c2 !important;
+}
+
+#closeIconDelete {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    color: rgb(202, 35, 35);
+}
+#closeIconDelete:hover{
+    transform: scale(1.2);
+}
+
+#sureDelete h3 {
+    font-size: 24px;
+}
+
+#sureDelete button {
+    padding: 2px 10px !important;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 1px solid black;
+    background: linear-gradient(148deg, rgba(18, 112, 6, 0.6) 28%, rgba(7, 134, 140, 0.6) 69%);
+    color: white;
+}
+#sureDelete button:hover{
+    background: linear-gradient(148deg, rgba(18, 112, 6, 0.6) 10%, rgba(228, 33, 7, 0.8) 40%);
+}
+
+/* ================ search and add =================== */
+.search {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    outline: 2px solid black;
+    overflow: hidden;
+    background-color: #08f5c2 !important;
+}
+
+.search:hover {
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.search_icon,
+.add_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(8, 245, 194) !important;
+}
+
+#searchData {
+    width: 70%;
+    margin-left: 10px !important;
+    padding-left: 10px !important;
+}
+
+/* ***************** */
+.add {
+    position: absolute;
+    z-index: 999;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    outline: 2px solid black;
+    overflow: hidden;
+    background-color: rgb(8, 245, 194) !important
+}
+
+.add:hover {
+    width: 80%;
+    height: 400px;
+}
+
+.add_icon {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.data_input {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 10px auto !important;
+}
+
+.data_input h2 {
+    width: 100%;
+    text-align: center !important;
+}
+
+.data_input_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.data_input_form div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 60%;
+    min-width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    margin: 15px auto !important;
+}
+
+.data_input_form input {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 0px 10px !important;
+}
+
+.data_input_form select {
+    min-width: fit-content;
+    max-width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0px 10px !important;
+
+}
+
+/* .... */
+.label {
+    position: absolute;
+    left: 0px;
+    padding: 0px 10px !important;
+    background: linear-gradient(148deg, rgba(18, 112, 6, 0.6) 28%, rgba(7, 134, 140, 0.6) 69%), linear-gradient(148deg, white 28%, rgba(145, 163, 176, 1) 69%);
+}
+
+.close {
+    width: 100%;
+    height: 100%;
+    border: black 3px solid;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.open {
+    width: fit-content;
+    height: 24px;
+    top: -26px;
+    font-size: 18px;
+    line-height: 22px;
+    border: black 1px solid;
+    border-radius: 5px;
+}
+
+/* .... */
+.data_input_form button {
+    margin: 20px auto !important;
+    width: fit-content;
+    height: fit-content;
+    padding: 2px 15px !important;
+    border: black 3px solid;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    background: linear-gradient(148deg, rgba(18, 112, 6, 0.6) 28%, rgba(7, 134, 140, 0.6) 69%);
+}
+
+/* ======================= show data ============================================== */
+.show_data_div {
+    width: 99%;
+    height: fit-content;
+    max-height: calc(100% - 90px);
+    margin: 30px auto !important;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+.show_data_div::-webkit-scrollbar {
+    width: 2px;
+}
+
+.show_data_div::-webkit-scrollbar-thumb {
+    background: #4BC32D;
+    width: 2px;
+    border-radius: 2px;
+}
+
+.show_data_div table {
+    width: 100%;
+    text-align: center;
+    border: 1px black solid;
+    background-color: rgb(255, 255, 255, 0.2);
+}
+
+.show_data_div table thead {
+    background-color: #4BC32D;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.show_data_div td i {
+    cursor: pointer;
+    color: black;
+}
+
+.show_data_div td i:nth-child(2n+1):hover {
+    color: #1f7708;
+    transform: scale(1.2);
+}
+
+.show_data_div td i:nth-child(2n):hover {
+    color: red;
+    transform: scale(1.2);
+}
+
+/* ================== edit form ============================== */
+.goalRow div {
+    width: 100%;
+    height: 100px;
+    background-color: #4BC32D;
+}
+
+.goalRow div input {
+    padding-left: 8px !important;
+}
+
+#editBtn,
+#neverBtn {
+    margin: 5px !important;
+    padding: 1px 5px !important;
+    background: linear-gradient(148deg, rgba(18, 112, 6, 0.6) 28%, rgba(7, 134, 140, 0.6) 69%);
+    color: white;
+    border-radius: 5px;
+}
