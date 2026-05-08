@@ -99,10 +99,10 @@ function goalEdit(i) {
                             </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                            <td><input id="editTitle" value="${goals[i].title}" style="max-width:80px;"></td>
-                            <td><input id="editDescription" value="${goals[i].description}" style="max-width:80px;"></td>
-                            <td><select id="editpriority" value="${goals[i].priority}" style="max-width:80px;">
+                            <tr style="width:100%">
+                            <td style="width:30%"><input id="editTitle" value="${goals[i].title}" style="max-width:80px;"></td>
+                            <td style="width:30%"><input id="editDescription" value="${goals[i].description}" style="max-width:80px;"></td>
+                            <td style="width:25%"><select id="editpriority" value="${goals[i].priority}" style="max-width:80px;">
                                 <option value="High">High</option>
                                 <option value="Medium">Medium</option>
                                 <option value="Low">Low</option>
