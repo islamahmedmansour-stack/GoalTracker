@@ -111,8 +111,8 @@ function goalEdit(i) {
                             </tr>
                             <tr>
                             <td colspan="5" >
-                            <button onclick='confirmUpdate(${i})' id="editBtn">Update<button>
-                            <button onclick='showDataFn()' id="neverBtn">Never<button>
+                            <button onclick='confirmUpdate(${i})' id="editBtn">Update</button>
+                            <button onclick='showDataFn()' id="neverBtn">Never</button>
                             </td>
                             </tr>
                             </tbody>
